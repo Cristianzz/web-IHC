@@ -13,16 +13,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
+    <video autoplay muted loop >
+        <source src="video/portada.mp4" type="video/mp4">
+        </video>
+        <div class="capa">
+
+        </div>
     <header  class="header">
         <div class="contenedor">
             <div class="barra">
-                <a href="index.html" class="logo">
-                    <h1 class=" logo_nombre no-margin centrar-texto">Chamba</h1>
+                <a href="index.html" class="logo" ><img src="img/chamba.png" alt="">
+                    
                 </a>
                 <nav class="navegacion">
                     
-                    <a href="index.html" class="navegacion_enlace"> Inicio</a>
-                    <a href="inicioSesion.html" class="navegacion_enlace">Iniciar Sesion</a>
+                    <a href="#" class="navegacion_enlace"> Inicio</a>
+                    <a href="login.html" class="navegacion_enlace">Iniciar Sesion</a>
                     <a href="registro.html" class="navegacion_enlace">Registrarse</a>
                 </nav>
             </div>
@@ -33,43 +39,38 @@
             <p class="no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae felis commodo <br>
                 incidunt arcu fermentum, placerat purus. Ut posuere dictum felis a convallis.</p>
             <div>
-                <button type="buttom" href="registro.html"> <span></span> Resgistrate ya</button>
+                <button type="buttom" > <span></span> <a href="registro.html">Resgistrate ya</a></button>
             </div>
         </div>
     </header>
-         <video autoplay muted loop >
-         <source src="video/portada.mp4" type="video/mp4">
-         </video>
-         <div class="capa">
-
-         </div>
+      
 
          <section class="Content Empresas">
             <h2 class="title_empresas">Empresas</h2>
             <p class="parrafo_empresas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aliquam sed sint voluptas natus adipisci, asperiores porro corrupti accusantium,  quasi, aspernatur eaque <br> quasi, aspernatur eaque quasi, aspernatur eaque unde modi quasi, aspernatur eaque mollitia dignissimos pariatur Obcaecati, corporis quasi, aspernatur eaque aspernatur?</p>
             <div class="box-container">
                 <div class="box">
-                    <i class="fab fa-apple"></i>
+                    <img src="img/comercio.png" width="200" alt="">
                     <h3>El Comercio</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
-                    <i class="fab fa-apple"></i>
+                    <img src="img/intercorp.png" width="200" alt="">
                     <h3>Intercorp</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
-                    <i class="fab fa-apple"></i>
+                    <img src="img/breca.png" width="200" alt="">
                     <h3>Breca</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
-                    <i class="fab fa-apple"></i>
+                    <img src="img/backus.png" width="200" alt="">
                     <h3>Backus</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
-                    <i class="fab fa-apple"></i>
+                    <img src="img/promart.png" width="200" alt="">
                     <h3>Promart</h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -163,6 +164,11 @@
     
             </div>
          </footer>
-        
+         <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
 </body>
 </html>

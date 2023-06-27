@@ -83,12 +83,16 @@ video{
     opacity: 0.7;
     mix-blend-mode: overlay ;
 }
-.header_texto{
+
+.header_texto {
     text-align: center;
     color: whitesmoke;
     margin-top: 5rem;
     position: relative;
     z-index: 2;
+}
+a{
+    text-decoration: none;
 }
 .header_texto h2{
     font-size: 7rem;
@@ -110,6 +114,7 @@ video{
     color: green;
     position: relative;
     z-index: 2;
+    width: 100px;
     
 }
 .log_nombre{
@@ -132,6 +137,7 @@ video{
     margin: 0 20px;
     position: relative;
     z-index: 2;
+    text-decoration: none;
 }
 .navegacion_enlace:after{
     content: '';
@@ -168,6 +174,7 @@ button {
  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  transition: all 250ms;
  overflow: hidden;
+ text-decoration: none;
 }
 
 button::before {
@@ -230,7 +237,8 @@ button:hover::before {
 .box-container .box {
     height: 170px;
     width: 270px;
-    background: #FF9839;
+    background: rgb(254,153,60);
+background: linear-gradient(0deg, rgba(254,153,60,1) 50%, rgba(219,70,69,1) 100%);
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
@@ -370,7 +378,7 @@ input{display: none}
 
 /*Footer Inicio*/
 footer{
-    background-color: #fff;
+    background: rgb(0,0,0);
     position: relative;
     width: 100%;
     min-height: 350px;
@@ -392,7 +400,7 @@ footer{
 
 .col{
    min-width: 250px;
-   color: #000;
+   color: #fff;
    font-family: poppins;
    padding:0 2rem;
 }
@@ -433,7 +441,7 @@ footer{
 .col .links a{
    display: block;
    text-decoration: none;
-   color:#000;
+   color:#fff;
    margin-bottom: 5px;
    position: relative;
    transition: 0.3s ease;
