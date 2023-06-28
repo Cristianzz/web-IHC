@@ -86,7 +86,7 @@ video{
 
 .header_texto {
     text-align: center;
-    color: whitesmoke;
+    color: #FFC300;
     margin-top: 5rem;
     position: relative;
     z-index: 2;
@@ -96,6 +96,10 @@ a{
 }
 .header_texto h2{
     font-size: 7rem;
+}
+
+.header_texto p{
+    font-size: 35px;
 }
 
 @media (min-width: 768px){
@@ -396,6 +400,7 @@ footer{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   text-align: justify;
 }
 
 .col{
